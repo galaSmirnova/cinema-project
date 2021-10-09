@@ -1,7 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #621402;
   font-family: 'Roboto',
     sans-serif;
+  color: #fff;
+}
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url(../img/bg.png) no-repeat center top/cover;
 }
 
 .container {
@@ -9,7 +19,7 @@ body {
   margin: auto;
 }
 
-.header {
+.navbar {
   display: flex;
   align-items: center;
   padding: 30px 0;
@@ -44,3 +54,145 @@ body {
   border-radius: 50%;
   margin-left: 11px;
 }
+
+.film {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  color: #fff;
+  margin-bottom: 69px;
+}
+
+.film-title-small {
+  font-size: 24px;
+  line-height: 150%;
+  opacity: 0.5;
+}
+
+.film-title {
+  font-size: 36px;
+  line-height: 42px;
+  margin: 11px 0 23px 0;
+}
+
+.film-details {
+  display: flex;
+  margin-top: 51px;
+}
+
+.film-description {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 560px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  margin-right: 31px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.time-icon {
+  margin-right: 14px;
+}
+
+.rating-icon {
+  margin-right: 12px;
+}
+
+.rating-current {
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.film-trailer {
+  margin: auto;
+}
+
+.session {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 49px;
+  padding-bottom: 64px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.session-date-block {
+  display: flex;
+}
+
+.session-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.session-date-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.session-month {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.session-day {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.session-week {
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.session-date-item:hover {
+  background: #FE8E05;
+  color: #621402;
+  cursor: pointer;
+}
+
+.select {
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.select option {
+  color: #000;
+}
+
+.select-cimnema {
+  width: 470px;
+}
+
+.select-time {
+  width: 108px;
+}
+
+/* .select option {
+  color: #000;
+} */
